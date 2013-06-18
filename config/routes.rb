@@ -1,4 +1,9 @@
 SeattleJobTrends::Application.routes.draw do
+
+  root :to => "snapshots#index"
+
+  resources :snapshots
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

@@ -6,7 +6,7 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
-
+gem 'dynamic_form', '1.1.4'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -20,6 +20,11 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+group :development do
+  gem 'better_errors'
+  gem "binding_of_caller"
+end
+
 group :test, :development do
   gem 'rspec-rails', '~> 2.11'
   gem 'pry-rails'
@@ -27,6 +32,13 @@ group :test, :development do
   gem 'pry-doc'
   gem 'launchy'
 end
+
+group :test do
+  gem 'capybara', '1.1.2'
+  gem 'factory_girl', '2.6.4'
+end
+
+gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

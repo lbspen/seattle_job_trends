@@ -1,0 +1,13 @@
+Job feed:
+ ☐ Create snapshot model
+ ☐ Retrieve XML from SimplyHired with Nokogiri
+ ☐ Parse XML
+Populate index:
+ ☐ Set up index
+ ☐ Run rake task from app
+Slides:
+Later:
+ ☐ Create post model
+ ☐ Show rake progress
+ ☐ Weight title more heavily
+ ☐ Heroku
