@@ -1,0 +1,16 @@
+<h2>Snapshots</h2>
+
+<table>
+  <tr>
+    <th>Location</th>
+    <th>Created</th>
+  </tr>
+  <% @snapshots.each do |snapshot| %>
+    <tr>
+      <td><%= link_to snapshot.location, snapshot %></td>
+      <td><%= snapshot.created_time %></td>
+    </tr>
+  <% end %> 
+</table>
+
+<%= link_to "New Snapshot", new_snapshot_path %>

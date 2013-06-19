@@ -1,5 +1,9 @@
 Job feed:
- ☐ Create snapshot model
+ ✔ Create snapshot model @done (13-06-18 16:37)
+ Display created time:
+   ✔ Display time created in index and single view (:created_at) @done (13-06-19 01:05)
+   ✔ Display time in local time @done (13-06-19 01:12)
+   ✔ Format time @done (13-06-19 01:27)
  ☐ Retrieve XML from SimplyHired with Nokogiri
  ☐ Parse XML
 Populate index:
@@ -7,7 +11,8 @@ Populate index:
  ☐ Run rake task from app
 Slides:
 Later:
- ☐ Create post model
+ ☐ Create post model for single job
  ☐ Show rake progress
  ☐ Weight title more heavily
  ☐ Heroku
+ ☐ Time format in helper function
