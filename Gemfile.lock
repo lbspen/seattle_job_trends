@@ -180,6 +180,7 @@ DEPENDENCIES
   factory_girl (= 2.6.4)
   jquery-rails
   launchy
+  nokogiri
   pry-debugger
   pry-doc
   pry-rails

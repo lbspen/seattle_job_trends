@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 feature "Viewing Snapshots -" do 
-  
+
   location1 = "Downtown"
   location2 = "Bellevue"
   let!(:snapshot1) { Factory.create(:snapshot, :location => location1) }
@@ -22,5 +22,6 @@ feature "Viewing Snapshots -" do
     page.status_code.should equal 200
     page.should have_content(location1)
     page.should have_content(snapshot1.created_time)
+    #page.should have_content(job_post_content)
   end
 end

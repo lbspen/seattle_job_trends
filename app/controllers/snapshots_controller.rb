@@ -9,7 +9,7 @@ class SnapshotsController < ApplicationController
 
   def create
     snapshot = Snapshot.new(params[:snapshot])
-    snapshot.save
+    snapshot.populate(request.remote_ip)
     redirect_to snapshot, :notice => "Snapshot retrieved."
   end
 

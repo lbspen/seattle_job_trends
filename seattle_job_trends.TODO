@@ -1,14 +1,21 @@
-Job feed:
- ✔ Create snapshot model @done (13-06-18 16:37)
- Display created time:
-   ✔ Display time created in index and single view (:created_at) @done (13-06-19 01:05)
-   ✔ Display time in local time @done (13-06-19 01:12)
-   ✔ Format time @done (13-06-19 01:27)
- ☐ Retrieve XML from SimplyHired with Nokogiri
- ☐ Parse XML
+Retrieve XML from SimplyHired with Nokogiri:
+ ✔ Install Nokogiri @done (13-06-19 02:32)
+  XML request URL:
+    http://api.simplyhired.com/a/jobs-api/xml-v2/q-technology?pshid=50662&ssty=2&cflg=r&jbd=seattle-trends.jobamatic.com&clip=50.132.66.31
+    doc.css("e")
+   ✔ Stub Nokogiri - shared context @done (13-06-19 04:09)
+   ✔ Put xml retrieval in after_create callback @done (13-06-19 13:46)
+   ✔ Add job_post_content attribute to snapshot @done (13-06-19 14:32)
+   ✔ Display content @done (13-06-19 15:35)
+   ✔ Turn on full description @done (13-06-19 21:18)
+   ✔ Add location @done (13-06-19 21:29)
+   ✔ Add keywords @done (13-06-19 21:09)
+   ✔ Put url in environment @done (13-06-19 22:11)
+   ✔ Add window length (number of posts) @done (13-06-19 21:33)
 Populate index:
  ☐ Set up index
  ☐ Run rake task from app
+ ☐ Use stopwords
 Slides:
 Later:
  ☐ Create post model for single job
@@ -16,3 +23,17 @@ Later:
  ☐ Weight title more heavily
  ☐ Heroku
  ☐ Time format in helper function
+ ☐ css
+ ☐ handle invalid location
+ ☐ use strings for location (not just zip)
+ ☐ Delete snapshots
+
+
+＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿
+Archive:
+Job feed:
+ `✔ Create snapshot model @done (13-06-18 16:37)
+Display created time:
+ ✔ Display time created in index and single view (:created_at) @done (13-06-19 01:05)
+ ✔ Display time in local time @done (13-06-19 01:12)
+ ✔ Format time @done (13-06-19 01:27)
