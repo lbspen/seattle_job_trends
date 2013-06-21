@@ -22,6 +22,5 @@ feature "Viewing Snapshots -" do
     page.status_code.should equal 200
     page.should have_content(location1)
     page.should have_content(snapshot1.created_time)
-    #page.should have_content(job_post_content)
   end
 end

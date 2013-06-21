@@ -19,11 +19,10 @@ class Snapshot < ActiveRecord::Base
 
   def create_url(client_ip)
     url_domain = ENV['SH_DOMAIN']
-    url_query = "/q-&quot;Web+Developer&quot;+OR+&quot;Software+Engineer&quot;"
-    url_location = "/l-#{location}"
+    url_query = "/q-Web+Developer"
+    url_location = "/l-#{location}/mi-5"
     url_num_posts = "/ws-25"
     url_required = "?pshid=#{ENV['SH_PSHID']}&ssty=2&cflg=r&jbd=#{ENV['SH_JBD']}&clip=#{client_ip}&frag=false"
     url_complete = "http://#{url_domain}#{url_query}#{url_location}#{url_num_posts}#{url_required}"
-  
   end
 end
