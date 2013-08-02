@@ -1,0 +1,7 @@
+language: ruby
+bundler_args: --without development
+rvm:
+  - "2.0.0"
+gemfile: Gemfile.ci
+# uncomment this line if your project needs to run something other than `rake`:
+# script: bundle exec rspec spec
