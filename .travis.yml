@@ -5,5 +5,7 @@ rvm:
 gemfile: Gemfile.ci
 env:
   - DB=postgresql
+before_script:
+  - psql -c 'create database lbspen_test' -U postgres
 # uncomment this line if your project needs to run something other than `rake`:
 # script: bundle exec rspec spec
