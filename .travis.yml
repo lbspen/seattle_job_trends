@@ -5,6 +5,8 @@ rvm:
 gemfile: Gemfile.ci
 env:
   - DB=postgresql
+script:
+- RAILS_ENV=test bundle exec rake --trace db:migrate test
 before_script:
   - psql -c 'create database lbspen_test' -U postgres
 # uncomment this line if your project needs to run something other than `rake`:
