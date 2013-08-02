@@ -6,6 +6,7 @@ gem 'rails', '3.2.14'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
+gem 'mysql2', '0.3.12b5'
 gem 'dynamic_form', '1.1.4'
 gem 'nokogiri'
 gem 'thinking-sphinx', '~> 3.0.2'

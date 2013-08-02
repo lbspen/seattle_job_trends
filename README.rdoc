@@ -1,1 +1,1 @@
-{<img src="https://travis-ci.org/[lbspen]/[seattle_job_trends].png" />}[https://travis-ci.org/[lbspen]/[seattle_job_trends]]
+{<img src="https://travis-ci.org/lbspen/seattle_job_trends.png" />}[https://travis-ci.org/lbspen/seattle_job_trends]
